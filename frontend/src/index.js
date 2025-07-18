@@ -1,12 +1,6 @@
-import React from "react";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './app';
 
-function App() {
-  return (
-    <div style={{ padding: "2rem" }}>
-      <h1>URL Shortener</h1>
-      <p>Frontend is working!</p>
-    </div>
-  );
-}
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
